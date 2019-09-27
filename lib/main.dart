@@ -8,12 +8,16 @@ void main() {
         body: SafeArea
           (
             child: Column(
-               //crossAxisAlignment: CrossAxisAlignment.center,
+               mainAxisAlignment: MainAxisAlignment.center,
                children: <Widget>[
-                 CircleAvatar(
+                  CircleAvatar(
                     radius: 50.0,
                     backgroundColor: Colors.white,
-                    child: Icon(Icons.person, size: 50, color: Colors.teal),
+                    child: Icon(
+                      Icons.person, 
+                      size: 50, 
+                      color: Colors.teal
+                    ),
                   ),
                   Text(
                     "Gaurav Menezes", 
@@ -33,6 +37,11 @@ void main() {
                       fontFamily: "SourceSansPro",
                       letterSpacing: 2.5,
                     )
+                  ),
+                  SizedBox(
+                    height: 20.0,
+                    width: 150,
+                    child: Divider(color: Colors.teal.shade100,)
                   ),
                   Card(
                     color: Colors.white,
